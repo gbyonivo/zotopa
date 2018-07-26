@@ -27,12 +27,12 @@ const ACTION_HANDLERS = {
     ...state,
     isFechingPersonalDetails: true
   }),
-  [FINISHED_FETCHING_PERSONAL_DETAILS]: (state, personalDetails) => ({
+  [FINISHED_FETCHING_PERSONAL_DETAILS]: (state, { personalDetails }) => ({
     ...state,
     isFetchingPersonalDetails: false,
     personalDetails
   }),
-  [ERROR_FETCHING_PERSONAL_DETAILS]: (state, errorFetchingPersonalDetails) => ({
+  [ERROR_FETCHING_PERSONAL_DETAILS]: (state, { errorFetchingPersonalDetails }) => ({
     ...state,
     isFetchingPersonalDetails: false,
     errorFetchingPersonalDetails
@@ -41,12 +41,12 @@ const ACTION_HANDLERS = {
     ...state,
     isFetchingFriends: true
   }),
-  [FINISHED_FETCHING_FRIENDS]: (state, friends) => ({
+  [FINISHED_FETCHING_FRIENDS]: (state, { friends }) => ({
     ...state,
     isFetchingFriends: false,
     friends
   }),
-  [ERROR_FETCHING_FRIENDS]: (state, errorFetchingFriends) => ({
+  [ERROR_FETCHING_FRIENDS]: (state, { errorFetchingFriends }) => ({
     ...state,
     isFetchingFriends: false,
     errorFetchingFriends
@@ -55,12 +55,12 @@ const ACTION_HANDLERS = {
     ...state,
     isSending: true
   }),
-  [FINISHED_SENDING]: (state, lastTransaction) => ({
+  [FINISHED_SENDING]: (state, { lastTransaction }) => ({
     ...state,
     isSending: false,
     lastTransaction
   }),
-  [ERROR_SENDING]: (state, errorSending) => ({
+  [ERROR_SENDING]: (state, { errorSending }) => ({
     ...state,
     isSending: false,
     errorSending

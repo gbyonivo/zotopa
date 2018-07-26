@@ -11,7 +11,6 @@ import {
 } from '../constants/actionTypes';
 
 export const fetchPersonalDetails = () => ({
-  payload: {},
   type: FETCH_PERSONAL_DETAILS
 });
 
@@ -28,7 +27,6 @@ export const errorFetchingPersonalDetails = error => ({
 });
 
 export const fetchFriends = () => ({
-  payload: {},
   type: FETCH_FRIENDS
 });
 
@@ -44,13 +42,13 @@ export const errorFetchingFriends = error => ({
   type: ERROR_FETCHING_FRIENDS
 });
 
-export const send = () => ({
-  payload: {},
+export const send = (friendId, amount) => ({
+  payload: { friendId, amount },
   type: SEND
 });
 
-export const finishedSending = lastTransactionDetails => ({
-  payload: { lastTransactionDetails },
+export const finishedSending = lastTransaction => ({
+  payload: { lastTransaction },
   type: FINISHED_SENDING
 });
 

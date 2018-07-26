@@ -20,7 +20,7 @@ const initialState = {
   errorFetchingFriends: null,
   errorFetchingPersonalDetails: null,
   isSending: false,
-  isFechingPersonalDetails: false,
+  isFetchingPersonalDetails: false,
   isFetchingFriends: false
 };
 
@@ -72,7 +72,7 @@ describe('Transaction Reducer', () => {
     const newState = transactionReducer(initialState, action);
     const expected = {
       ...initialState,
-      isFechingPersonalDetails: true
+      isFetchingPersonalDetails: true
     };
     expect(newState).toMatchObject(expected);
   });

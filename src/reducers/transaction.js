@@ -18,14 +18,14 @@ const initialState = {
   errorFetchingFriends: null,
   errorFetchingPersonalDetails: null,
   isSending: false,
-  isFechingPersonalDetails: false,
+  isFetchingPersonalDetails: false,
   isFetchingFriends: false
 };
 
 const ACTION_HANDLERS = {
   [FETCH_PERSONAL_DETAILS]: state => ({
     ...state,
-    isFechingPersonalDetails: true
+    isFetchingPersonalDetails: true
   }),
   [FINISHED_FETCHING_PERSONAL_DETAILS]: (state, { personalDetails }) => ({
     ...state,

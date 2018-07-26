@@ -1,13 +1,16 @@
 export const fetchPersonalDetailsService = () => ({
   name: 'Orkuma Ivo',
-  amout: '30000'
+  amout: '30000',
+  id: '4'
 });
 
 export const fetchFriendsService = () => [
   {
-    name: 'Orseer Ivo'
+    name: 'Orseer Ivo',
+    id: '9'
   }, {
-    name: 'Ngufan Ivo'
+    name: 'Ngufan Ivo',
+    id: '3'
   }
 ];
 

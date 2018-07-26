@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FriendList should render correctly 1`] = `
+<ul>
+  <div>
+    ivo
+  </div>
+</ul>
+`;
+
+exports[`FriendList should render correctly with empty friends 1`] = `
+<div>
+  No Friends
+</div>
+`;

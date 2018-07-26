@@ -26,8 +26,9 @@ export const errorFetchingPersonalDetails = error => ({
   type: ERROR_FETCHING_PERSONAL_DETAILS
 });
 
-export const fetchFriends = () => ({
-  type: FETCH_FRIENDS
+export const fetchFriends = userId => ({
+  type: FETCH_FRIENDS,
+  payload: { userId }
 });
 
 export const finishedFetchingFriends = friends => ({

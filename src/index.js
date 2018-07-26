@@ -8,6 +8,7 @@ import reducer from './reducers';
 import rootSaga from './sagas';
 import SendMoneyForm from './containers/sendMoneyForm';
 import PersonalDetails from './containers/personalDetails';
+import FriendsListMenu from './containers/friendsListMenu';
 
 import './index.scss';
 
@@ -28,6 +29,7 @@ ReactDOM.render(<Provider store={store}>
     <div>
       <Route path="/" component={SendMoneyForm} exact />
       <Route path="/" component={PersonalDetails} exact />
+      <Route path="/" component={FriendsListMenu} exact />
     </div>
   </BrowserRouter>
 </Provider>, document.getElementById('index')); //eslint-disable-line

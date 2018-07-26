@@ -25,6 +25,6 @@ describe('PersonalDetails Component', () => {
         <PersonalDetails {...props}/>
       </Provider>
     );
-    expect(actual).toMatchSnapshot()
+    expect(actual).toMatchSnapshot();
   });
 });

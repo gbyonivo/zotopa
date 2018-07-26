@@ -16,6 +16,7 @@ class FriendsListMenu extends Component {
   render() {
     const { friends, errorFetching, isFetching } = this.props;
     return (<div className={`${styles.friendsListMenu} friendsListMenu`}>
+      <h2>Saved Friends</h2>
       {
         errorFetching // eslint-disable-line
           ? errorFetching // eslint-disable-line

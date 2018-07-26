@@ -32,6 +32,7 @@ class SendMoneyForm extends Component {
       accountName, accountNumber, sortCode, amount
     } = this.state;
     return (<div className={styles.sendMoneyForm}>
+      <h2>Send Money</h2>
       <TextInput
         name="accountName"
         value={accountName}

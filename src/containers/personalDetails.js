@@ -5,6 +5,8 @@ import { compose } from 'redux';
 import { selectPersonalDetails, selectIsFetchingPersonalDetails, selectErrorFetchingPersonalDetails } from '../selectors';
 import * as actions from '../actions';
 
+import styles from './personalDetails.scss';
+
 class PersonalDetails extends Component {
   componentDidMount() {
     this.props.fetchPersonalDetails(1);
@@ -12,13 +14,13 @@ class PersonalDetails extends Component {
 
   render() {
     const { personalDetails, errorFetching, isFetching } = this.props;
-    return (<div>
+    return (<div className={styles.personalDetails}>
       {
         errorFetching // eslint-disable-line
           ? errorFetching // eslint-disable-line
-          : isFetching || !personalDetails.name
+          : isFetching || !personalDetails.id
             ? 'loading'
-            : personalDetails.name
+            : personalDetails.accountName
       }
     </div>);
   }

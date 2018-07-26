@@ -1,0 +1,35 @@
+{
+  "friends": [
+    {
+      "accountName": "Ivo Ngufan",
+      "id": 1,
+      "accountNumber": "012245672",
+      "sortCode": "55-55-55",
+      "address": "82 Elmira Way Salford"
+    }, {
+      "accountName": "Gybon Sengohol",
+      "id": 2,
+      "accountNumber": "012645672",
+      "sortCode": "55-55-55",
+      "address": "4 Elmira Way Salford"
+    }, {
+      "accountName": "Goat Orseer",
+      "id": 3,
+      "accountNumber": "012045672",
+      "sortCode": "55-55-55",
+      "address": "6 Elmira Way Salford"
+    }, {
+      "accountName": "Sela Terungwa",
+      "id": 4,
+      "accountNumber": "012145672",
+      "sortCode": "55-55-55",
+      "address": "7 Elmira Way Salford"
+    }, {
+      "accountName": "Naagh Nas",
+      "id": 5,
+      "accountNumber": "018345672",
+      "sortCode": "55-55-55",
+      "address": "10 Elmira Way Salford"
+    }
+  ]
+}

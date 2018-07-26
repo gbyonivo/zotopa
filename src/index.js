@@ -26,7 +26,7 @@ sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(<Provider store={store}>
   <BrowserRouter>
-    <div>
+    <div className="wrapper">
       <Route path="/" component={SendMoneyForm} exact />
       <Route path="/" component={PersonalDetails} exact />
       <Route path="/" component={FriendsListMenu} exact />

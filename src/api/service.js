@@ -1,18 +1,9 @@
-export const fetchPersonalDetailsService = () => ({
-  name: 'Orkuma Ivo',
-  amout: '30000',
-  id: '4'
-});
+import userJSON from '../data/user';
+import friendsJSON from '../data/friends';
 
-export const fetchFriendsService = () => [
-  {
-    name: 'Orseer Ivo',
-    id: '9'
-  }, {
-    name: 'Ngufan Ivo',
-    id: '3'
-  }
-];
+export const fetchPersonalDetailsService = () => (userJSON);
+
+export const fetchFriendsService = () => friendsJSON.friends;
 
 export const sendService = (friendId, amount) => ({
   friendId,

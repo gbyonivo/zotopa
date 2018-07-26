@@ -6,6 +6,8 @@ import { selectErrorFetchingFriends, selectFriends, selectIsFetchingFriends } fr
 import * as actions from '../actions';
 import FriendsList from '../components/friendsList';
 
+import styles from './friendsListMenu.scss';
+
 class FriendsListMenu extends Component {
   componentDidMount() {
     this.props.fetchFriends(4);
@@ -13,7 +15,7 @@ class FriendsListMenu extends Component {
 
   render() {
     const { friends, errorFetching, isFetching } = this.props;
-    return (<div>
+    return (<div className={`${styles.friendsListMenu} friendsListMenu`}>
       {
         errorFetching // eslint-disable-line
           ? errorFetching // eslint-disable-line

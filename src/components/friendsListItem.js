@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FriendsListItem = ({ friend }) => <div>
-  {friend.name}
+  {friend.accountName}
 </div>;
 
 FriendsListItem.propTypes = {

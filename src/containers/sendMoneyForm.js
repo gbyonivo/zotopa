@@ -8,6 +8,8 @@ import NumberInput from '../components/numberInput';
 import { selectErrorSending, selectIsSending } from '../selectors';
 import * as actions from '../actions';
 
+import styles from './sendMoneyForm.scss';
+
 class SendMoneyForm extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +31,7 @@ class SendMoneyForm extends Component {
     const {
       accountName, accountNumber, sortCode, amount
     } = this.state;
-    return (<div>
+    return (<div className={styles.sendMoneyForm}>
       <TextInput
         name="accountName"
         value={accountName}

@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './textInput.scss';
+import styles from './numberInput.scss';
 
-const TextInput = ({
+const NumberInput = ({
   value,
   onChange,
   label,
   placeholder,
   name
-}) => <div className={styles.textInput}>
+}) => <div className={styles.numberInput}>
   <label htmlFor={name}>{label}</label>
   <input
-    type="text"
+    type="number"
     placeholder={placeholder}
     value={value}
     onChange={e => onChange(e.target.value, name)}
@@ -20,12 +20,12 @@ const TextInput = ({
   />
 </div>;
 
-TextInput.propTypes = {
-  value: PropTypes.string.isRequired,
+NumberInput.propTypes = {
+  value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 };
 
-export default TextInput;
+export default NumberInput;

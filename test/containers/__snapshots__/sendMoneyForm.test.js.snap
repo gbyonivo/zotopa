@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SendMoneyForm should render correctly 1`] = `
+<div>
+  <div
+    className="textInput"
+  >
+    <label
+      htmlFor="accountName"
+    >
+      Account Number
+    </label>
+    <input
+      name="accountName"
+      onChange={[Function]}
+      placeholder="Ngufan Ivo"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="textInput"
+  >
+    <label
+      htmlFor="accountNumber"
+    >
+      Account Number
+    </label>
+    <input
+      name="accountNumber"
+      onChange={[Function]}
+      placeholder="0123456789"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="textInput"
+  >
+    <label
+      htmlFor="sortCode"
+    >
+      Sort Code
+    </label>
+    <input
+      name="sortCode"
+      onChange={[Function]}
+      placeholder="22-22-33"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="numberInput"
+  >
+    <label
+      htmlFor="amount"
+    >
+      Amount (£)
+    </label>
+    <input
+      name="amount"
+      onChange={[Function]}
+      placeholder="3000"
+      type="number"
+      value={0}
+    />
+  </div>
+  <div
+    className="buttonDiv"
+  >
+    <button
+      disabled={false}
+      name="send"
+      onClick={[Function]}
+    >
+      Send Money
+    </button>
+  </div>
+</div>
+`;

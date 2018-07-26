@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextInput component TextInput renders correctly 1`] = `
+exports[`NumberInput component TextInput renders correctly 1`] = `
 <div
   className="textInput"
 >
@@ -14,7 +14,7 @@ exports[`TextInput component TextInput renders correctly 1`] = `
     onChange={[Function]}
     placeholder="play"
     type="text"
-    value="play"
+    value={0}
   />
 </div>
 `;

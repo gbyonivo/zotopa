@@ -17,3 +17,5 @@ export const selectSelectedFriend = ({ transactionReducer: { selectedFriend } })
 export const selectIsFetchingFriends = ({ transactionReducer: { isFetchingFriends } }) => isFetchingFriends;
 
 export const selectErrorFetchingFriends = ({ transactionReducer: { errorFetchingFriends } }) => errorFetchingFriends;
+
+export const selectAvailableFunds = ({ transactionReducer: { personalDetails } }) => parseFloat(personalDetails.availableFunds, 10);

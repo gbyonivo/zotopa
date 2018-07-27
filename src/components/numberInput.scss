@@ -16,6 +16,12 @@
     font-weight: bold;
     margin: 0 0 5px 5px;
   }
+  span.error{
+    color: #872a2a;
+    font-size: 10px;
+    font-weight: lighter;
+    font-style: italic;
+  }
 }
 
 @media screen and (max-width: 768px) {

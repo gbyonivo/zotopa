@@ -6,19 +6,23 @@ import Transactions from './transactions';
 const AccountDetails = ({ personalDetails }) => <ul className={styles.accountDetails}>
   <li className={styles.accountDetailsItem}>
     <label>Account Name</label>
-    <span>{personalDetails.name}</span>
+    <span className={styles.accountDetailsItemContent}>{personalDetails.name}</span>
   </li>
   <li className={styles.accountDetailsItem}>
     <label>Account Number</label>
-    <span>{personalDetails.email}</span>
+    <span className={styles.accountDetailsItemContent}>{personalDetails.email}</span>
   </li>
   <li className={styles.accountDetailsItem}>
     <label>Availble Funds</label>
-    <span>{personalDetails.availableFunds}</span>
+    <span className={styles.accountDetailsItemContent}>£{personalDetails.availableFunds}</span>
   </li>
   <li className={styles.accountDetailsItem}>
-    <label>Transaction</label>
-    <Transactions transactions={personalDetails.transactions}/>
+    <label>Transactions</label>
+    {
+      personalDetails.transactions.length
+        ? <Transactions transactions={personalDetails.transactions} />
+        : <span className={styles.accountDetailsItemContent}>No Transactions</span>
+    }
   </li>
 </ul>;
 

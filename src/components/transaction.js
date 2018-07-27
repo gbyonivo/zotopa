@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Transaction = ({ transaction }) => <li>
-  <span>{transaction.name}</span>
-  <span>{transaction.email}</span>
-  <span>{transaction.amount}</span>
-  <span>{transaction.date}</span>
-</li>;
+const Transaction = ({ transaction }) => <tr>
+  <td>{transaction.name}</td>
+  <td>{transaction.email}</td>
+  <td>£{transaction.amount}</td>
+  <td>{transaction.date}</td>
+</tr>;
 
 Transaction.propTypes = {
-  transaction: PropTypes.object.isRequired
+  transaction: PropTypes.object.isRequired,
 };
 
 export default Transaction;

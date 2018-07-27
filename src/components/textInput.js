@@ -8,7 +8,8 @@ const TextInput = ({
   onChange,
   label,
   placeholder,
-  name
+  name,
+  error
 }) => <div className={styles.textInput}>
   <label htmlFor={name}>{label}</label>
   <input
@@ -18,6 +19,7 @@ const TextInput = ({
     onChange={e => onChange(e.target.value, name)}
     name={name}
   />
+  { error && <span className={styles.error}>{error}</span> }
 </div>;
 
 TextInput.propTypes = {
@@ -25,7 +27,8 @@ TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  error: PropTypes.string
 };
 
 export default TextInput;

@@ -8,7 +8,8 @@ const NumberInput = ({
   onChange,
   label,
   placeholder,
-  name
+  name,
+  error
 }) => <div className={styles.numberInput}>
   <label htmlFor={name}>{label}</label>
   <input
@@ -18,14 +19,16 @@ const NumberInput = ({
     onChange={e => onChange(e.target.value, name)}
     name={name}
   />
+  { error && <span className={styles.error}>{error}</span> }
 </div>;
 
 NumberInput.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  error: PropTypes.string
 };
 
 export default NumberInput;

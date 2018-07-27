@@ -1,0 +1,12 @@
+.selectedFriendInfo{
+  padding: 15px;
+  cursor: pointer;
+  label{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  &:hover{
+    background: rgba(255, 0, 0, 0.398);
+  }
+}

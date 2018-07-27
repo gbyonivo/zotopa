@@ -83,7 +83,6 @@ const ACTION_HANDLERS = {
 };
 
 export default (state = initialState, { type, payload }) => {
-  console.log(type);
   const handler = ACTION_HANDLERS[type];
   return handler ? handler(state, payload) : state;
 };

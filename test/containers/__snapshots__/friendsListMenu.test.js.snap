@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FriendListMenu should render component correct 1`] = `
-<div>
+<div
+  className="friendsListMenu friendsListMenu"
+>
+  <h2>
+    Saved Friends
+  </h2>
   loading
 </div>
 `;

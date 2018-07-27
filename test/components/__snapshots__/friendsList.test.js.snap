@@ -1,15 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FriendList should render correctly 1`] = `
-<ul>
-  <div>
-    ivo
-  </div>
+<ul
+  className="friendsList"
+>
+  <li
+    className="friendsListItem"
+    onClick={[Function]}
+  >
+    <span>
+      ivo
+    </span>
+    <span />
+  </li>
 </ul>
 `;
 
 exports[`FriendList should render correctly with empty friends 1`] = `
-<div>
+<div
+  className="noFriends"
+>
   No Friends
 </div>
 `;

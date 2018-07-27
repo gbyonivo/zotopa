@@ -21,7 +21,8 @@ const initialState = {
   errorFetchingPersonalDetails: null,
   isSending: false,
   isFetchingPersonalDetails: false,
-  isFetchingFriends: false
+  isFetchingFriends: false,
+  selectedFriend: {}
 };
 
 describe('Transaction Reducer', () => {

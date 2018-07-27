@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PersonalDetails Component should render correctly 1`] = `
-<div>
-  loading
+<div
+  className="personalDetails"
+>
+  <h2>
+    Personal Account Details
+  </h2>
+  <div
+    className="loading"
+  />
 </div>
 `;

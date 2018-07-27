@@ -44,13 +44,10 @@ describe('fetchPersonalDetails', () => {
 
 describe('send', () => {
   it('should return send action', () => {
-    const actual = send(1, 2000);
+    const actual = send({});
     const expected = {
       type: SEND,
-      payload: {
-        friendId: 1,
-        amount: 2000
-      }
+      payload: { transaction: {} }
     };
     expect(actual).toMatchObject(expected);
   });

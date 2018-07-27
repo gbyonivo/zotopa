@@ -64,7 +64,7 @@ const ACTION_HANDLERS = {
     lastTransaction,
     personalDetails: {
       ...state.personalDetails,
-      transactions: state.personalDetails.transactions.concat(lastTransaction),
+      transactions: [...(state.personalDetails.transactions || []), lastTransaction],
       availableFunds: state.personalDetails.availableFunds - lastTransaction.amount
     },
     selectedFriend: {}

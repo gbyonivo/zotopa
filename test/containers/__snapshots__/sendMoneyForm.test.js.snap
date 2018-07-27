@@ -1,54 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SendMoneyForm should render correctly 1`] = `
-<div>
-  <div
-    className="textInput"
-  >
-    <label
-      htmlFor="accountName"
+<div
+  className="sendMoneyForm"
+>
+  <h2>
+    Send Money
+  </h2>
+  <div>
+    <div
+      className="textInput"
     >
-      Account Number
-    </label>
-    <input
-      name="accountName"
-      onChange={[Function]}
-      placeholder="Ngufan Ivo"
-      type="text"
-      value=""
-    />
-  </div>
-  <div
-    className="textInput"
-  >
-    <label
-      htmlFor="accountNumber"
+      <label
+        htmlFor="name"
+      >
+        Name
+      </label>
+      <input
+        name="name"
+        onChange={[Function]}
+        placeholder="Ngufan Ivo"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="textInput"
     >
-      Account Number
-    </label>
-    <input
-      name="accountNumber"
-      onChange={[Function]}
-      placeholder="0123456789"
-      type="text"
-      value=""
-    />
-  </div>
-  <div
-    className="textInput"
-  >
-    <label
-      htmlFor="sortCode"
-    >
-      Sort Code
-    </label>
-    <input
-      name="sortCode"
-      onChange={[Function]}
-      placeholder="22-22-33"
-      type="text"
-      value=""
-    />
+      <label
+        htmlFor="email"
+      >
+        E-mail
+      </label>
+      <input
+        name="email"
+        onChange={[Function]}
+        placeholder="orkumaivo@gmail.com"
+        type="text"
+        value=""
+      />
+    </div>
   </div>
   <div
     className="numberInput"
@@ -63,7 +54,7 @@ exports[`SendMoneyForm should render correctly 1`] = `
       onChange={[Function]}
       placeholder="3000"
       type="number"
-      value={0}
+      value="0"
     />
   </div>
   <div

@@ -1,30 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './accountDetails.scss';
+import Transactions from './transactions';
 
-const AccountDetails = ({ personalDetails }) => <ul>
-  <li>
+const AccountDetails = ({ personalDetails }) => <ul className={styles.accountDetails}>
+  <li className={styles.accountDetailsItem}>
     <label>Account Name</label>
-    <span>{personalDetails.accountName}</span>
+    <span>{personalDetails.name}</span>
   </li>
-  <li>
+  <li className={styles.accountDetailsItem}>
     <label>Account Number</label>
-    <span>{personalDetails.accountNumber}</span>
+    <span>{personalDetails.email}</span>
   </li>
-  <li>
-    <label>Sort Code</label>
-    <span>{personalDetails.sortCode}</span>
+  <li className={styles.accountDetailsItem}>
+    <label>Availble Funds</label>
+    <span>{personalDetails.availableFunds}</span>
   </li>
-  <li>
-    <label>Address</label>
-    <span>{personalDetails.accountName}</span>
-  </li>
-  <li>
-    <label>Amount</label>
-    <span>{personalDetails.amount}</span>
-  </li>
-  <li>
+  <li className={styles.accountDetailsItem}>
     <label>Transaction</label>
-    <span>{personalDetails.accountName}</span>
+    <Transactions transactions={personalDetails.transactions}/>
   </li>
 </ul>;
 

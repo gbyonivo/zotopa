@@ -33,9 +33,9 @@ export function* fetchFriendsSaga({ payload: { userId } }) {
   }
 }
 
-export function* sendSaga({ payload: { friendId, amount } }) {
+export function* sendSaga({ payload: { transaction } }) {
   try {
-    const lastTransaction = yield call(sendService, friendId, amount);
+    const lastTransaction = yield call(sendService, transaction);
     yield put(finishedSending(lastTransaction));
   } catch (e) {
     yield put(errorSending('error occured while sending money'));

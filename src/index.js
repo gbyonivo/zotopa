@@ -4,6 +4,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
+import WebFont from 'webfontloader';
 import reducer from './reducers';
 import rootSaga from './sagas';
 import SendMoneyForm from './containers/sendMoneyForm';
@@ -11,6 +12,15 @@ import PersonalDetails from './containers/personalDetails';
 import FriendsListMenu from './containers/friendsListMenu';
 
 import './index.scss';
+
+WebFont.load({
+  google: {
+    families: [
+      'Patua One',
+      'Fira Sans'
+    ]
+  }
+});
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(

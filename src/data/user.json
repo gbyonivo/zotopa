@@ -1,9 +1,7 @@
 {
-  "accountName": "Ivo Orkuma",
+  "name": "Ivo Orkuma",
   "id": 4,
-  "accountNumber": "012345672",
-  "sortCode": "55-55-55",
-  "address": "8 Elmira Way Salford",
-  "amount": 100000,
+  "email": "orkumaivo@gmail.com",
+  "availableFunds": 100000,
   "transactions": []
 }

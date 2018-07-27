@@ -58,7 +58,11 @@ const ACTION_HANDLERS = {
   [FINISHED_SENDING]: (state, { lastTransaction }) => ({
     ...state,
     isSending: false,
-    lastTransaction
+    lastTransaction,
+    personalDetails: {
+      ...state.personalDetails,
+      transactions: state.personalDetails.transactions.concat(lastTransaction)
+    }
   }),
   [ERROR_SENDING]: (state, { errorSending }) => ({
     ...state,

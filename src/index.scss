@@ -1,5 +1,6 @@
 :global{
   body{
+    font-family: 'Patua One';
     margin: 0;
     .wrapper{
       height: 100%;
@@ -8,7 +9,7 @@
       right: 0;
       background: #3e9174;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
       grid-auto-rows: minmax(40%, auto);
     }
   }

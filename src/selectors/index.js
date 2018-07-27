@@ -4,6 +4,8 @@ export const selectErrorSending = ({ transactionReducer: { errorSending } }) => 
 
 export const selectPersonalDetails = ({ transactionReducer: { personalDetails } }) => personalDetails;
 
+export const selectTransactions = ({ transactionReducer: { personalDetails } }) => personalDetails.transactions || [];
+
 export const selectIsFetchingPersonalDetails = ({ transactionReducer: { isFetchingPersonalDetails } }) => isFetchingPersonalDetails;
 
 export const selectErrorFetchingPersonalDetails = ({ transactionReducer: { errorFetchingPersonalDetails } }) => errorFetchingPersonalDetails;

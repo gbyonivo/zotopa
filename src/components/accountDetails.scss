@@ -1,0 +1,17 @@
+ul.accountDetails{
+  list-style-type: none;
+  li.accountDetailsItem{
+    label{
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 20px ;
+      margin-bottom: 4px;
+      padding-left: 4px;
+    }
+    span{
+      display: block;
+      font-size: 20px;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import PropTypes from 'prop-types';
+import dateFns from 'date-fns';
 import Button from '../components/button';
 import TextInput from '../components/textInput';
 import NumberInput from '../components/numberInput';
@@ -14,44 +15,41 @@ class SendMoneyForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      accountNumber: '',
-      accountName: '',
-      sortCode: '',
+      name: '',
+      email: '',
       amount: 0
     };
     this.onChange = this.onChange.bind(this);
+    this.sendMoney = this.sendMoney.bind(this);
   }
 
   onChange(value, name) {
     this.setState(() => ({ [name]: value }));
   }
 
+  sendMoney() {
+    this.props.send({ ...this.state, date: dateFns.format(new Date(), 'YYYY-MM-DD HH:mm') });
+  }
+
   render() {
-    const { isSending, send } = this.props;
+    const { isSending } = this.props;
     const {
-      accountName, accountNumber, sortCode, amount
+      email, name, amount
     } = this.state;
     return (<div className={styles.sendMoneyForm}>
       <h2>Send Money</h2>
       <TextInput
-        name="accountName"
-        value={accountName}
-        label="Account Number"
+        name="name"
+        value={name}
+        label="Name"
         placeholder="Ngufan Ivo"
         onChange={this.onChange}
       />
       <TextInput
-        name="accountNumber"
-        value={accountNumber}
-        label="Account Number"
-        placeholder="0123456789"
-        onChange={this.onChange}
-      />
-      <TextInput
-        name="sortCode"
-        value={sortCode}
-        label="Sort Code"
-        placeholder="22-22-33"
+        name="email"
+        value={email}
+        label="E-mail"
+        placeholder="orkumaivo@gmail.com"
         onChange={this.onChange}
       />
       <NumberInput
@@ -64,7 +62,7 @@ class SendMoneyForm extends Component {
       <Button
         value="Send Money"
         isLoading={isSending}
-        onClick={() => send}
+        onClick={this.sendMoney}
         name="send"
       />
     </div>);

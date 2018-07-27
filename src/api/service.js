@@ -5,7 +5,4 @@ export const fetchPersonalDetailsService = () => (userJSON);
 
 export const fetchFriendsService = () => friendsJSON.friends;
 
-export const sendService = (friendId, amount) => ({
-  friendId,
-  amount
-});
+export const sendService = transaction => transaction;

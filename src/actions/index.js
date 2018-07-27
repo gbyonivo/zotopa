@@ -7,7 +7,9 @@ import {
   ERROR_FETCHING_FRIENDS,
   ERROR_SENDING,
   SEND,
-  FINISHED_SENDING
+  FINISHED_SENDING,
+  SELECT_FRIEND,
+  REMOVE_SELECTION
 } from '../constants/actionTypes';
 
 export const fetchPersonalDetails = () => ({
@@ -51,6 +53,15 @@ export const send = transaction => ({
 export const finishedSending = lastTransaction => ({
   payload: { lastTransaction },
   type: FINISHED_SENDING
+});
+
+export const selectFriend = selectedFriend => ({
+  payload: { selectedFriend },
+  type: SELECT_FRIEND
+});
+
+export const removeSelection = () => ({
+  type: REMOVE_SELECTION
 });
 
 export const errorSending = error => ({

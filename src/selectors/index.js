@@ -12,6 +12,8 @@ export const selectErrorFetchingPersonalDetails = ({ transactionReducer: { error
 
 export const selectFriends = ({ transactionReducer: { friends } }) => friends;
 
+export const selectSelectedFriend = ({ transactionReducer: { selectedFriend } }) => selectedFriend;
+
 export const selectIsFetchingFriends = ({ transactionReducer: { isFetchingFriends } }) => isFetchingFriends;
 
 export const selectErrorFetchingFriends = ({ transactionReducer: { errorFetchingFriends } }) => errorFetchingFriends;

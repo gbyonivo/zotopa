@@ -4,12 +4,13 @@ import { compose } from 'redux';
 import PropTypes from 'prop-types';
 import dateFns from 'date-fns';
 import Button from '../components/button';
-import TextInput from '../components/textInput';
 import NumberInput from '../components/numberInput';
-import { selectErrorSending, selectIsSending } from '../selectors';
+import SelectedFriendInfo from '../components/selectedFriendInfo';
+import { selectErrorSending, selectIsSending, selectSelectedFriend } from '../selectors';
 import * as actions from '../actions';
 
 import styles from './sendMoneyForm.scss';
+import UserDetailsForm from '../components/friendInfoForm';
 
 class SendMoneyForm extends Component {
   constructor(props) {
@@ -23,6 +24,14 @@ class SendMoneyForm extends Component {
     this.sendMoney = this.sendMoney.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.selectedFriend.email) {
+      this.setState(() => ({
+        ...nextProps.selectedFriend
+      }));
+    }
+  }
+
   onChange(value, name) {
     this.setState(() => ({ [name]: value }));
   }
@@ -32,26 +41,15 @@ class SendMoneyForm extends Component {
   }
 
   render() {
-    const { isSending } = this.props;
-    const {
-      email, name, amount
-    } = this.state;
+    const { isSending, selectedFriend } = this.props;
+    const { email, name, amount } = this.state;
     return (<div className={styles.sendMoneyForm}>
       <h2>Send Money</h2>
-      <TextInput
-        name="name"
-        value={name}
-        label="Name"
-        placeholder="Ngufan Ivo"
-        onChange={this.onChange}
-      />
-      <TextInput
-        name="email"
-        value={email}
-        label="E-mail"
-        placeholder="orkumaivo@gmail.com"
-        onChange={this.onChange}
-      />
+      {
+        !selectedFriend.email
+          ? <UserDetailsForm email={email} name={name} onChange={this.onChange} />
+          : <SelectedFriendInfo selectedFriend={selectedFriend} />
+      }
       <NumberInput
         name="amount"
         value={amount}
@@ -72,12 +70,14 @@ class SendMoneyForm extends Component {
 SendMoneyForm.propTypes = {
   send: PropTypes.func.isRequired,
   isSending: PropTypes.bool.isRequired,
+  selectedFriend: PropTypes.object.isRequired,
   errorSending: PropTypes.string
 };
 
 const mapStateToProps = state => ({
   isSending: selectIsSending(state),
-  errorSending: selectErrorSending(state)
+  errorSending: selectErrorSending(state),
+  selectedFriend: selectSelectedFriend(state)
 });
 
 const mapActionsToProps = dispatch => ({

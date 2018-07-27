@@ -7,7 +7,9 @@ import {
   ERROR_FETCHING_FRIENDS,
   ERROR_SENDING,
   SEND,
-  FINISHED_SENDING
+  FINISHED_SENDING,
+  SELECT_FRIEND,
+  REMOVE_SELECTION
 } from '../constants/actionTypes';
 
 const initialState = {
@@ -19,7 +21,8 @@ const initialState = {
   errorFetchingPersonalDetails: null,
   isSending: false,
   isFetchingPersonalDetails: false,
-  isFetchingFriends: false
+  isFetchingFriends: false,
+  selectedFriend: {}
 };
 
 const ACTION_HANDLERS = {
@@ -69,9 +72,18 @@ const ACTION_HANDLERS = {
     isSending: false,
     errorSending
   }),
+  [SELECT_FRIEND]: (state, { selectedFriend }) => ({
+    ...state,
+    selectedFriend
+  }),
+  [REMOVE_SELECTION]: state => ({
+    ...state,
+    selectedFriend: {}
+  }),
 };
 
 export default (state = initialState, { type, payload }) => {
+  console.log(type);
   const handler = ACTION_HANDLERS[type];
   return handler ? handler(state, payload) : state;
 };

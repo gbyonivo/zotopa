@@ -2,13 +2,13 @@ const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+")
 
 export const validateEmail = email => validEmail.test((email || '').toLowerCase()) ? null : 'Invalid Email';
 
-export const validateName = name => name.length < 3 ? 'name must be mire than 3 chars' : null;
+export const validateName = name => name.length < 3 ? 'name must be more than 3 chars' : null;
 
 export const validateAmount = (amount, maxAmount) =>
   amount < 1 || isNaN(amount) || amount === "" // eslint-disable-line
     ? 'Invalid Amount'
     : amount > maxAmount
-      ? 'Insufficent Funds'
+      ? 'Insufficient Funds'
       : null;
 
 export const validateForm = ({ name, email, amount }, maxAmount) => ({

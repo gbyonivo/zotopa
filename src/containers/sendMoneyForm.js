@@ -51,7 +51,10 @@ class SendMoneyForm extends Component {
       this.setState(() => ({ amountError, nameError, emailError }));
       return;
     }
-    this.props.send({ ...this.state, date: dateFns.format(new Date(), 'YYYY-MM-DD HH:mm') });
+    this.props.send(
+      { ...this.state, date: dateFns.format(new Date(), 'YYYY-MM-DD HH:mm') },
+      this.props.availableFunds - this.state.amount
+    );
     this.setState(() => initialState);
   }
 

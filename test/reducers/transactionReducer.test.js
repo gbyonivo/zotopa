@@ -56,13 +56,17 @@ describe('Transaction Reducer', () => {
   });
 
   it('FINISHED_SENDING-should return new state', () => {
-    const action = { payload: { lastTransaction: { amount: 300, friendId: 6 } }, type: FINISHED_SENDING };
-    const newState = transactionReducer(initialState, action);
+    const action = { payload: { lastTransaction: { 0: { amount: 300, friendId: 6 } } }, type: FINISHED_SENDING };
+    const currentState = { ...initialState, personalDetails: { availableFunds: 1000, transactions: {} } };
+    const newState = transactionReducer(currentState, action);
     const expected = {
-      ...initialState,
+      ...currentState,
+      personalDetails: { availableFunds: 700, transactions: { 0: { amount: 300, friendId: 6 } } },
       lastTransaction: {
-        amount: 300,
-        friendId: 6
+        0: {
+          amount: 300,
+          friendId: 6
+        }
       }
     };
     expect(newState).toMatchObject(expected);

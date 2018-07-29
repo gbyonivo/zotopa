@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountDetails should render correctly with empty transactions 1`] = `
+<ul
+  className="accountDetails"
+>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Account Name
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      Ivo
+    </span>
+  </li>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Account Number
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      io@io.com
+    </span>
+  </li>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Availble Funds
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      £
+      100000
+    </span>
+  </li>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Transactions
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      No Transactions
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`AccountDetails should render correctly with transactions 1`] = `
+<ul
+  className="accountDetails"
+>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Account Name
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      Ivo
+    </span>
+  </li>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Account Number
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      io@io.com
+    </span>
+  </li>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Availble Funds
+    </label>
+    <span
+      className="accountDetailsItemContent"
+    >
+      £
+      100000
+    </span>
+  </li>
+  <li
+    className="accountDetailsItem"
+  >
+    <label>
+      Transactions
+    </label>
+    <table
+      className="transactions"
+    >
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Email
+          </th>
+          <th>
+            Amount
+          </th>
+          <th>
+            Date
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </li>
+</ul>
+`;

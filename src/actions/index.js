@@ -45,8 +45,8 @@ export const errorFetchingFriends = error => ({
   type: ERROR_FETCHING_FRIENDS
 });
 
-export const send = transaction => ({
-  payload: { transaction },
+export const send = (transaction, availableFunds) => ({
+  payload: { transaction, availableFunds },
   type: SEND
 });
 

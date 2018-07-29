@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transactions should render correctly 1`] = `
+<table
+  className="transactions"
+>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Email
+      </th>
+      <th>
+        Amount
+      </th>
+      <th>
+        Date
+      </th>
+    </tr>
+  </thead>
+  <tbody />
+</table>
+`;

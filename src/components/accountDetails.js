@@ -19,8 +19,8 @@ const AccountDetails = ({ personalDetails }) => <ul className={styles.accountDet
   <li className={styles.accountDetailsItem}>
     <label>Transactions</label>
     {
-      personalDetails.transactions.length
-        ? <Transactions transactions={personalDetails.transactions} />
+      Object.keys(personalDetails.transactions).length
+        ? <Transactions/>
         : <span className={styles.accountDetailsItemContent}>No Transactions</span>
     }
   </li>

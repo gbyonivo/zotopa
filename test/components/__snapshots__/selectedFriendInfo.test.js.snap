@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectedFriendInfo should render correctly 1`] = `
+<div
+  className="selectedFriendInfo"
+  onClick={[Function]}
+>
+  <label>
+    name
+  </label>
+  ivo
+  <label>
+    email
+  </label>
+  3
+</div>
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FriendsInfoForm should render correctly 1`] = `
+<div>
+  <div
+    className="textInput"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      name="name"
+      onChange={[Function]}
+      placeholder="Ngufan Ivo"
+      type="text"
+      value="barry"
+    />
+    <span
+      className="error"
+    >
+      name error
+    </span>
+  </div>
+  <div
+    className="textInput"
+  >
+    <label
+      htmlFor="email"
+    >
+      E-mail
+    </label>
+    <input
+      name="email"
+      onChange={[Function]}
+      placeholder="orkumaivo@gmail.com"
+      type="text"
+      value="milner@gmail.com"
+    />
+    <span
+      className="error"
+    >
+      email error
+    </span>
+  </div>
+</div>
+`;

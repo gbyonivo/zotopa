@@ -7,7 +7,9 @@ import {
   errorFetchingPersonalDetails,
   finishedFetchingFriends,
   finishedSending,
-  finishedFetchingPersonalDetails
+  finishedFetchingPersonalDetails,
+  selectFriend,
+  removeSelection
 } from '../../src/actions';
 
 import {
@@ -19,7 +21,9 @@ import {
   ERROR_FETCHING_FRIENDS,
   ERROR_SENDING,
   SEND,
-  FINISHED_SENDING
+  FINISHED_SENDING,
+  SELECT_FRIEND,
+  REMOVE_SELECTION
 } from '../../src/constants/actionTypes';
 
 describe('fetchFriends', () => {
@@ -126,6 +130,29 @@ describe('finishedSending', () => {
       payload: {
         lastTransaction: 'lt'
       }
+    };
+    expect(actual).toMatchObject(expected);
+  });
+});
+
+describe('selectFriend', () => {
+  it('should return finishedSending action', () => {
+    const actual = selectFriend({});
+    const expected = {
+      type: SELECT_FRIEND,
+      payload: {
+        selectedFriend: {}
+      }
+    };
+    expect(actual).toMatchObject(expected);
+  });
+});
+
+describe('removeSelection', () => {
+  it('should return finishedSending action', () => {
+    const actual = removeSelection();
+    const expected = {
+      type: REMOVE_SELECTION
     };
     expect(actual).toMatchObject(expected);
   });

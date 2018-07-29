@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Transaction from './transaction';
 import styles from './transactions.scss';
+import { selectTransactions } from '../selectors';
 
 const Transactions = ({ transactions }) => <table className={styles.transactions}>
   <thead>
@@ -22,8 +24,12 @@ const Transactions = ({ transactions }) => <table className={styles.transactions
   </tbody>
 </table>;
 
+const mapStateToProps = state => ({
+  transactions: selectTransactions(state)
+});
+
 Transactions.propTypes = {
   transactions: PropTypes.array.isRequired
 };
 
-export default Transactions;
+export default connect(mapStateToProps)(Transactions);

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transaction should render correctly 1`] = `
+<tr>
+  <td>
+    ivo
+  </td>
+  <td>
+    3
+  </td>
+  <td>
+    £
+    10
+  </td>
+  <td>
+    d
+  </td>
+</tr>
+`;

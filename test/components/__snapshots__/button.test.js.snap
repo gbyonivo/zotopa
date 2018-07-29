@@ -2,9 +2,10 @@
 
 exports[`Button component renders correctly when isLoading is false 1`] = `
 <div
-  className="buttonDiv"
+  className="sc-bdVaJa hRQyyH"
 >
   <button
+    className="sc-bwzfXH jTJbth"
     onClick={[Function]}
   >
     play
@@ -14,9 +15,10 @@ exports[`Button component renders correctly when isLoading is false 1`] = `
 
 exports[`Button component renders correctly when isLoading is true 1`] = `
 <div
-  className="buttonDiv"
+  className="sc-bdVaJa hRQyyH"
 >
   <button
+    className="sc-bwzfXH jTJbth"
     disabled={true}
     onClick={[Function]}
   >

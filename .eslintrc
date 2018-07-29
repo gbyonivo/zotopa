@@ -11,12 +11,10 @@
       "node": true
   },
   "plugins": [
-      "css-modules",
       "react"
   ],
   "extends": [
-      "airbnb-base",
-      "plugin:css-modules/recommended"
+      "airbnb-base"
   ],
   "rules": {
       "comma-dangle": "off",

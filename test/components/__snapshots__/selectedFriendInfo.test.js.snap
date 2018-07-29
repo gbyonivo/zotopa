@@ -2,14 +2,18 @@
 
 exports[`SelectedFriendInfo should render correctly 1`] = `
 <div
-  className="selectedFriendInfo"
+  className="sc-bdVaJa ckOkmQ"
   onClick={[Function]}
 >
-  <label>
+  <label
+    className="sc-bwzfXH elRDCf"
+  >
     name
   </label>
   ivo
-  <label>
+  <label
+    className="sc-bwzfXH elRDCf"
+  >
     email
   </label>
   3

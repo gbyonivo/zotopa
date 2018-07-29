@@ -1,17 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import Transaction from './transaction';
-import styles from './transactions.scss';
 import { selectTransactions } from '../selectors';
 
-const Transactions = ({ transactions }) => <table className={styles.transactions}>
+const StyledTransactionTables = styled.table`
+  width: calc(100% - 50px);
+  background: #666;
+  color: #fff;
+`;
+
+const HeaderCell = styled.th`
+  font-size: 14px;
+  background: #ccc;
+  color: #000;
+`;
+
+const Transactions = ({ transactions }) => <StyledTransactionTables>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Amount</th>
-      <th>Date</th>
+      <HeaderCell>Name</HeaderCell>
+      <HeaderCell>Email</HeaderCell>
+      <HeaderCell>Amount</HeaderCell>
+      <HeaderCell>Date</HeaderCell>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +34,7 @@ const Transactions = ({ transactions }) => <table className={styles.transactions
       />)
     }
   </tbody>
-</table>;
+</StyledTransactionTables>;
 
 const mapStateToProps = state => ({
   transactions: selectTransactions(state)

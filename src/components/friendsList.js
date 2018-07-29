@@ -1,13 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import FriendsListItem from './friendsListItem';
-import styles from './friendsList.scss';
+
+const StyledNoFriends = styled.div`
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+`;
+
+const StyledFriendsList = styled.ul`
+  margin: 0;
+  padding: 10px 0 0 10px;
+`;
 
 const FriendsList = ({ friends }) => friends.length < 1
-  ? <div className={styles.noFriends}>No Friends</div>
-  : <ul className={styles.friendsList}>
+  ? <StyledNoFriends>
+    No Friends
+  </StyledNoFriends>
+  : <StyledFriendsList>
     {friends.map(friend => <FriendsListItem friend={friend} key={friend.id}/>)}
-  </ul>;
+  </StyledFriendsList>;
 
 FriendsList.propTypes = {
   friends: PropTypes.array.isRequired

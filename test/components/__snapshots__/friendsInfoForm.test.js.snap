@@ -3,14 +3,16 @@
 exports[`FriendsInfoForm should render correctly 1`] = `
 <div>
   <div
-    className="textInput"
+    className="sc-bdVaJa lhoMHm"
   >
     <label
+      className="sc-bwzfXH gCFQuH"
       htmlFor="name"
     >
       Name
     </label>
     <input
+      className="sc-htpNat ctJJFC"
       name="name"
       onChange={[Function]}
       placeholder="Ngufan Ivo"
@@ -18,20 +20,22 @@ exports[`FriendsInfoForm should render correctly 1`] = `
       value="barry"
     />
     <span
-      className="error"
+      className="sc-bxivhb gWykjp"
     >
       name error
     </span>
   </div>
   <div
-    className="textInput"
+    className="sc-bdVaJa lhoMHm"
   >
     <label
+      className="sc-bwzfXH gCFQuH"
       htmlFor="email"
     >
       E-mail
     </label>
     <input
+      className="sc-htpNat ctJJFC"
       name="email"
       onChange={[Function]}
       placeholder="orkumaivo@gmail.com"
@@ -39,7 +43,7 @@ exports[`FriendsInfoForm should render correctly 1`] = `
       value="milner@gmail.com"
     />
     <span
-      className="error"
+      className="sc-bxivhb gWykjp"
     >
       email error
     </span>

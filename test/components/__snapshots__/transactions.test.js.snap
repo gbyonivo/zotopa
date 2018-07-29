@@ -2,20 +2,28 @@
 
 exports[`Transactions should render correctly 1`] = `
 <table
-  className="transactions"
+  className="sc-bdVaJa eXCjPS"
 >
   <thead>
     <tr>
-      <th>
+      <th
+        className="sc-bwzfXH VDOjF"
+      >
         Name
       </th>
-      <th>
+      <th
+        className="sc-bwzfXH VDOjF"
+      >
         Email
       </th>
-      <th>
+      <th
+        className="sc-bwzfXH VDOjF"
+      >
         Amount
       </th>
-      <th>
+      <th
+        className="sc-bwzfXH VDOjF"
+      >
         Date
       </th>
     </tr>

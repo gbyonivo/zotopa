@@ -44,14 +44,14 @@ describe('Fetch Friends Sagas', () => {
 
 describe('Send Saga', () => {
   it('should call specific function', () => {
-    const gen = sendSaga({ payload: { transaction: {} } });
+    const gen = sendSaga({ payload: { transaction: {}, availableFunds: 100 } });
     const actual = [
-      gen.next({}),
+      gen.next({}, 100),
       gen.next({}),
       gen.next(),
     ];
     const expected = [
-      { done: false, value: call(sendService, {}) },
+      { done: false, value: call(sendService, {}, 100) },
       { done: false, value: put(finishedSending({})) },
       { done: true },
     ];

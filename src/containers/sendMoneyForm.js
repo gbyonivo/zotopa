@@ -13,8 +13,6 @@ import {
   selectAvailableFunds
 } from '../selectors';
 import * as actions from '../actions';
-
-import styles from './sendMoneyForm.scss';
 import UserDetailsForm from '../components/friendInfoForm';
 import { validateForm } from '../functions/validation';
 
@@ -63,7 +61,7 @@ class SendMoneyForm extends Component {
     const {
       email, name, amount, amountError, nameError, emailError
     } = this.state;
-    return (<div className={styles.sendMoneyForm}>
+    return (<div>
       <h2>Send Money</h2>
       {
         !selectedFriend.email

@@ -2,7 +2,7 @@
 
 exports[`FriendListItem should render correctly 1`] = `
 <li
-  className="friendsListItem"
+  className="sc-bdVaJa ijehez"
   onClick={[Function]}
 >
   <span>

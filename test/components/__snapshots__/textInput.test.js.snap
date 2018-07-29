@@ -2,14 +2,16 @@
 
 exports[`TextInput component TextInput renders correctly 1`] = `
 <div
-  className="textInput"
+  className="sc-bdVaJa lhoMHm"
 >
   <label
+    className="sc-bwzfXH gCFQuH"
     htmlFor="play"
   >
     play
   </label>
   <input
+    className="sc-htpNat ctJJFC"
     name="play"
     onChange={[Function]}
     placeholder="play"

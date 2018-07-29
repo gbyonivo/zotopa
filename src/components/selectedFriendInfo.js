@@ -2,18 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import styled from 'styled-components';
 import * as actions from '../actions';
 
-import styles from './selectedFriendInfo.scss';
+const StyledSelectedFriend = styled.div`
+  padding: 15px;
+  cursor: pointer;
+  &:hover{
+    background: rgba(255, 0, 0, 0.398);
+  }
+`;
+
+const StyledLabel = styled.label`
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+`;
 
 const SelectedFriend = ({
   selectedFriend, removeSelection
-}) => <div className={styles.selectedFriendInfo} onClick={() => removeSelection()}>
-  <label>name</label>
+}) => <StyledSelectedFriend onClick={() => removeSelection()}>
+  <StyledLabel>name</StyledLabel>
   {selectedFriend.name}
-  <label>email</label>
+  <StyledLabel>email</StyledLabel>
   {selectedFriend.email}
-</div>;
+</StyledSelectedFriend>;
 
 SelectedFriend.propTypes = {
   selectedFriend: PropTypes.object.isRequired,

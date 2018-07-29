@@ -2,13 +2,13 @@
 
 exports[`PersonalDetails Component should render correctly 1`] = `
 <div
-  className="personalDetails"
+  className="sc-bZQynM emmlyl"
 >
   <h2>
     Personal Account Details
   </h2>
   <div
-    className="loading"
+    className="sc-EHOje gSVDSI"
   />
 </div>
 `;

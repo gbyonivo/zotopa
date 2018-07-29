@@ -2,10 +2,10 @@
 
 exports[`FriendList should render correctly 1`] = `
 <ul
-  className="friendsList"
+  className="sc-htpNat gLXgrZ"
 >
   <li
-    className="friendsListItem"
+    className="sc-bdVaJa ijehez"
     onClick={[Function]}
   >
     <span>
@@ -18,7 +18,7 @@ exports[`FriendList should render correctly 1`] = `
 
 exports[`FriendList should render correctly with empty friends 1`] = `
 <div
-  className="noFriends"
+  className="sc-bwzfXH ePOLZx"
 >
   No Friends
 </div>

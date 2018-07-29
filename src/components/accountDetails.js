@@ -1,30 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './accountDetails.scss';
+import styled from 'styled-components';
 import Transactions from './transactions';
 
-const AccountDetails = ({ personalDetails }) => <ul className={styles.accountDetails}>
-  <li className={styles.accountDetailsItem}>
-    <label>Account Name</label>
-    <span className={styles.accountDetailsItemContent}>{personalDetails.name}</span>
+const Span = styled.span`
+  display: block;
+  font-size: 20px;
+`;
+
+const Label = styled.label`
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 20px ;
+  margin-bottom: 4px;
+  padding-left: 4px;
+`;
+
+const List = styled.ul`
+  list-style-type: none;
+`;
+
+const AccountDetails = ({ personalDetails }) => <List>
+  <li>
+    <Label>Account Name</Label>
+    <Span>{personalDetails.name}</Span>
   </li>
-  <li className={styles.accountDetailsItem}>
-    <label>Account Number</label>
-    <span className={styles.accountDetailsItemContent}>{personalDetails.email}</span>
+  <li>
+    <Label>Account Number</Label>
+    <Span>{personalDetails.email}</Span>
   </li>
-  <li className={styles.accountDetailsItem}>
-    <label>Availble Funds</label>
-    <span className={styles.accountDetailsItemContent}>£{personalDetails.availableFunds}</span>
+  <li>
+    <Label>Availble Funds</Label>
+    <Span>£{personalDetails.availableFunds}</Span>
   </li>
-  <li className={styles.accountDetailsItem}>
-    <label>Transactions</label>
+  <li>
+    <Label>Transactions</Label>
     {
       Object.keys(personalDetails.transactions).length
-        ? <Transactions/>
-        : <span className={styles.accountDetailsItemContent}>No Transactions</span>
+        ? <Transactions />
+        : <Span>No Transactions</Span>
     }
   </li>
-</ul>;
+</List>;
 
 AccountDetails.propTypes = {
   personalDetails: PropTypes.object.isRequired

@@ -2,7 +2,7 @@
 
 exports[`FriendListMenu should render component correct 1`] = `
 <div
-  className="friendsListMenu friendsListMenu"
+  className="friendsListMenu"
 >
   <h2>
     Saved Friends

@@ -2,11 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import styled from 'styled-components';
 import { selectPersonalDetails, selectIsFetchingPersonalDetails, selectErrorFetchingPersonalDetails } from '../selectors';
 import * as actions from '../actions';
-import styles from './personalDetails.scss';
 import AccountDetails from '../components/accountDetails';
 import Loading from '../components/loading';
+
+const StyledPersonalDetails = styled.div`
+  background: #fff;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+`;
 
 class PersonalDetails extends Component {
   componentDidMount() {
@@ -15,7 +22,7 @@ class PersonalDetails extends Component {
 
   render() {
     const { personalDetails, errorFetching, isFetching } = this.props;
-    return (<div className={styles.personalDetails}>
+    return (<StyledPersonalDetails>
       <h2>Personal Account Details</h2>
       {
         errorFetching // eslint-disable-line
@@ -24,7 +31,7 @@ class PersonalDetails extends Component {
             ? <Loading/>
             : <AccountDetails personalDetails={personalDetails}/>
       }
-    </div>);
+    </StyledPersonalDetails>);
   }
 }
 

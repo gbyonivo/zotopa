@@ -2,53 +2,53 @@
 
 exports[`AccountDetails should render correctly with empty transactions 1`] = `
 <ul
-  className="accountDetails"
+  className="sc-ifAKCX isvPdJ"
 >
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Account Name
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       Ivo
     </span>
   </li>
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Account Number
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       io@io.com
     </span>
   </li>
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Availble Funds
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       £
       100000
     </span>
   </li>
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Transactions
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       No Transactions
     </span>
@@ -58,66 +58,74 @@ exports[`AccountDetails should render correctly with empty transactions 1`] = `
 
 exports[`AccountDetails should render correctly with transactions 1`] = `
 <ul
-  className="accountDetails"
+  className="sc-ifAKCX isvPdJ"
 >
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Account Name
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       Ivo
     </span>
   </li>
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Account Number
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       io@io.com
     </span>
   </li>
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Availble Funds
     </label>
     <span
-      className="accountDetailsItemContent"
+      className="sc-htpNat isFYmG"
     >
       £
       100000
     </span>
   </li>
-  <li
-    className="accountDetailsItem"
-  >
-    <label>
+  <li>
+    <label
+      className="sc-bxivhb blKbwO"
+    >
       Transactions
     </label>
     <table
-      className="transactions"
+      className="sc-bdVaJa eXCjPS"
     >
       <thead>
         <tr>
-          <th>
+          <th
+            className="sc-bwzfXH VDOjF"
+          >
             Name
           </th>
-          <th>
+          <th
+            className="sc-bwzfXH VDOjF"
+          >
             Email
           </th>
-          <th>
+          <th
+            className="sc-bwzfXH VDOjF"
+          >
             Amount
           </th>
-          <th>
+          <th
+            className="sc-bwzfXH VDOjF"
+          >
             Date
           </th>
         </tr>

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/.bin/jest",
+    "test": "node --harmony_proxies node_modules/.bin/jest",
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
@@ -100,7 +100,8 @@
         "lines": 80
       }
     },
-    "verbose": false,
+    "verbose": true,
+    "testURL": "http://localhost/",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],

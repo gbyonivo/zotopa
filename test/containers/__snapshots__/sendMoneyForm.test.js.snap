@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SendMoneyForm should render correctly 1`] = `
-<div
-  className="sendMoneyForm"
->
+<div>
   <h2>
     Send Money
   </h2>
   <div>
     <div
-      className="textInput"
+      className="sc-htoDjs iGmIOn"
     >
       <label
+        className="sc-dnqmqq dnOdFH"
         htmlFor="name"
       >
         Name
       </label>
       <input
+        className="sc-iwsKbI hCDjNQ"
         name="name"
         onChange={[Function]}
         placeholder="Ngufan Ivo"
@@ -25,14 +25,16 @@ exports[`SendMoneyForm should render correctly 1`] = `
       />
     </div>
     <div
-      className="textInput"
+      className="sc-htoDjs iGmIOn"
     >
       <label
+        className="sc-dnqmqq dnOdFH"
         htmlFor="email"
       >
         E-mail
       </label>
       <input
+        className="sc-iwsKbI hCDjNQ"
         name="email"
         onChange={[Function]}
         placeholder="orkumaivo@gmail.com"
@@ -42,14 +44,16 @@ exports[`SendMoneyForm should render correctly 1`] = `
     </div>
   </div>
   <div
-    className="numberInput"
+    className="sc-htpNat dpiKWT"
   >
     <label
+      className="sc-bxivhb QmVXx"
       htmlFor="amount"
     >
       Amount (£)
     </label>
     <input
+      className="sc-ifAKCX edMgZq"
       name="amount"
       onChange={[Function]}
       placeholder="3000"
@@ -58,9 +62,10 @@ exports[`SendMoneyForm should render correctly 1`] = `
     />
   </div>
   <div
-    className="buttonDiv"
+    className="sc-bdVaJa hRQyyH"
   >
     <button
+      className="sc-bwzfXH jTJbth"
       disabled={false}
       name="send"
       onClick={[Function]}

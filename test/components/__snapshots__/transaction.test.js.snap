@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Transaction should render correctly 1`] = `
-<tr>
-  <td>
+<WithContext(TrInner)>
+  <WithContext(TdInner)>
     ivo
-  </td>
-  <td>
+  </WithContext(TdInner)>
+  <WithContext(TdInner)>
     3
-  </td>
-  <td>
+  </WithContext(TdInner)>
+  <WithContext(TdInner)>
     £
     10
-  </td>
-  <td>
+  </WithContext(TdInner)>
+  <WithContext(TdInner)>
     d
-  </td>
-</tr>
+  </WithContext(TdInner)>
+</WithContext(TrInner)>
 `;

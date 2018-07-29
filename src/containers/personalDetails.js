@@ -9,10 +9,15 @@ import AccountDetails from '../components/accountDetails';
 import Loading from '../components/loading';
 
 const StyledPersonalDetails = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 2;
   background: #fff;
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 3;
+  @media screen and (min-width: 750px) {
+    background: #fff;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+  }
 `;
 
 class PersonalDetails extends Component {

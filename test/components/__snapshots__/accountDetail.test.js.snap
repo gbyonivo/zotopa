@@ -2,40 +2,40 @@
 
 exports[`AccountDetails should render correctly with empty transactions 1`] = `
 <ul
-  className="sc-ifAKCX isvPdJ"
+  className="sc-htpNat bWEXTj"
 >
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="sc-bwzfXH EulNe"
     >
       Account Name
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       Ivo
     </span>
   </li>
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="sc-bwzfXH EulNe"
     >
       Account Number
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       io@io.com
     </span>
   </li>
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="sc-bwzfXH EulNe"
     >
       Availble Funds
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       £
       100000
@@ -43,12 +43,12 @@ exports[`AccountDetails should render correctly with empty transactions 1`] = `
   </li>
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="transaction sc-bwzfXH EulNe"
     >
       Transactions
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       No Transactions
     </span>
@@ -58,40 +58,40 @@ exports[`AccountDetails should render correctly with empty transactions 1`] = `
 
 exports[`AccountDetails should render correctly with transactions 1`] = `
 <ul
-  className="sc-ifAKCX isvPdJ"
+  className="sc-htpNat bWEXTj"
 >
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="sc-bwzfXH EulNe"
     >
       Account Name
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       Ivo
     </span>
   </li>
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="sc-bwzfXH EulNe"
     >
       Account Number
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       io@io.com
     </span>
   </li>
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="sc-bwzfXH EulNe"
     >
       Availble Funds
     </label>
     <span
-      className="sc-htpNat isFYmG"
+      className="sc-bdVaJa dgblDn"
     >
       £
       100000
@@ -99,33 +99,25 @@ exports[`AccountDetails should render correctly with transactions 1`] = `
   </li>
   <li>
     <label
-      className="sc-bxivhb blKbwO"
+      className="transaction sc-bwzfXH EulNe"
     >
       Transactions
     </label>
     <table
-      className="sc-bdVaJa eXCjPS"
+      className=" responsiveTable"
     >
       <thead>
         <tr>
-          <th
-            className="sc-bwzfXH VDOjF"
-          >
+          <th>
             Name
           </th>
-          <th
-            className="sc-bwzfXH VDOjF"
-          >
+          <th>
             Email
           </th>
-          <th
-            className="sc-bwzfXH VDOjF"
-          >
+          <th>
             Amount
           </th>
-          <th
-            className="sc-bwzfXH VDOjF"
-          >
+          <th>
             Date
           </th>
         </tr>

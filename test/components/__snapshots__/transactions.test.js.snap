@@ -2,28 +2,20 @@
 
 exports[`Transactions should render correctly 1`] = `
 <table
-  className="sc-bdVaJa eXCjPS"
+  className=" responsiveTable"
 >
   <thead>
     <tr>
-      <th
-        className="sc-bwzfXH VDOjF"
-      >
+      <th>
         Name
       </th>
-      <th
-        className="sc-bwzfXH VDOjF"
-      >
+      <th>
         Email
       </th>
-      <th
-        className="sc-bwzfXH VDOjF"
-      >
+      <th>
         Amount
       </th>
-      <th
-        className="sc-bwzfXH VDOjF"
-      >
+      <th>
         Date
       </th>
     </tr>

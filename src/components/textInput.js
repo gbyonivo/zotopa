@@ -14,7 +14,7 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
-  width: 200px;
+  width: 98%;
   height: 40px;
   border-radius: 4px;
   border: none;
@@ -22,12 +22,6 @@ const StyledInput = styled.input`
   text-align: center;
   font-weight: bold;
   display: block;
-  @media screen and (max-width: 768px) {
-    width: 200px;
-  }
-  @media screen and (max-width: 615px) {
-    width: 98%;
-  }
 `;
 
 const StyledErrorSpan = styled.span`

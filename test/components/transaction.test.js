@@ -1,11 +1,11 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Transaction from '../../src/components/transaction';
 
 
 describe('Transaction', () => {
   it('should render correctly', () => {
-    const actual = create(<Transaction transaction={{ amount: 10, name: 'ivo', email: '3', date: 'd' }}/>);
+    const actual = shallow(<Transaction transaction={{ amount: 10, name: 'ivo', email: '3', date: 'd' }}/>);
     expect(actual).toMatchSnapshot();
   });
 });

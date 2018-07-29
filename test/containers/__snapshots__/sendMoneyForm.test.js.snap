@@ -16,7 +16,7 @@ exports[`SendMoneyForm should render correctly 1`] = `
         Name
       </label>
       <input
-        className="sc-iwsKbI hCDjNQ"
+        className="sc-iwsKbI cKMoOp"
         name="name"
         onChange={[Function]}
         placeholder="Ngufan Ivo"
@@ -34,7 +34,7 @@ exports[`SendMoneyForm should render correctly 1`] = `
         E-mail
       </label>
       <input
-        className="sc-iwsKbI hCDjNQ"
+        className="sc-iwsKbI cKMoOp"
         name="email"
         onChange={[Function]}
         placeholder="orkumaivo@gmail.com"

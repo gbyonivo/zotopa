@@ -17,12 +17,8 @@ exports[`Button component renders correctly when isLoading is true 1`] = `
 <div
   className="sc-bdVaJa hRQyyH"
 >
-  <button
-    className="sc-bwzfXH jTJbth"
-    disabled={true}
-    onClick={[Function]}
-  >
-    play...
-  </button>
+  <span>
+    Sending...
+  </span>
 </div>
 `;

@@ -38,8 +38,8 @@ ReactDOM.render(<Provider store={store}>
   <BrowserRouter>
     <div className="wrapper">
       <Route path="/" component={SendMoneyForm} exact />
-      <Route path="/" component={PersonalDetails} exact />
       <Route path="/" component={FriendsListMenu} exact />
+      <Route path="/" component={PersonalDetails} exact />
     </div>
   </BrowserRouter>
 </Provider>, document.getElementById('index')); //eslint-disable-line

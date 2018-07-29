@@ -32,9 +32,11 @@ const Button = ({
   value
 }) => <Div>
   {
-    <StyledButton onClick={onClick} disabled={isLoading} name={name}>
-      {`${value}${isLoading ? '...' : ''}`}
-    </StyledButton>
+    !isLoading
+      ? <StyledButton onClick={onClick} disabled={isLoading} name={name}>
+        {value}
+      </StyledButton>
+      : <span>Sending...</span>
   }
 </Div>;
 

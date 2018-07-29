@@ -15,10 +15,20 @@ const Label = styled.label`
   margin-top: 20px ;
   margin-bottom: 4px;
   padding-left: 4px;
+  &.transaction{
+    font-size: 16px;
+    text-align: center;
+  }
 `;
 
 const List = styled.ul`
   list-style-type: none;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  @media screen and (min-width: 750px) {
+    margin: 1em;
+  }
 `;
 
 const AccountDetails = ({ personalDetails }) => <List>
@@ -35,7 +45,7 @@ const AccountDetails = ({ personalDetails }) => <List>
     <Span>£{personalDetails.availableFunds}</Span>
   </li>
   <li>
-    <Label>Transactions</Label>
+    <Label className="transaction">Transactions</Label>
     {
       Object.keys(personalDetails.transactions).length
         ? <Transactions />

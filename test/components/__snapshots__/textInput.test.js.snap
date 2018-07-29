@@ -11,7 +11,7 @@ exports[`TextInput component TextInput renders correctly 1`] = `
     play
   </label>
   <input
-    className="sc-htpNat ctJJFC"
+    className="sc-htpNat iCiSUl"
     name="play"
     onChange={[Function]}
     placeholder="play"

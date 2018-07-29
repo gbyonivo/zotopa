@@ -12,7 +12,7 @@ exports[`FriendsInfoForm should render correctly 1`] = `
       Name
     </label>
     <input
-      className="sc-htpNat ctJJFC"
+      className="sc-htpNat iCiSUl"
       name="name"
       onChange={[Function]}
       placeholder="Ngufan Ivo"
@@ -35,7 +35,7 @@ exports[`FriendsInfoForm should render correctly 1`] = `
       E-mail
     </label>
     <input
-      className="sc-htpNat ctJJFC"
+      className="sc-htpNat iCiSUl"
       name="email"
       onChange={[Function]}
       placeholder="orkumaivo@gmail.com"

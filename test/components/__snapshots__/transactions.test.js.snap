@@ -13,7 +13,9 @@ exports[`Transactions should render correctly 1`] = `
         Email
       </th>
       <th>
-        Amount
+        Amount (total - £
+        0
+        )
       </th>
       <th>
         Date

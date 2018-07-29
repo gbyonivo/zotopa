@@ -5,12 +5,12 @@ import { Table, Thead, Tbody, Tr, Th } from 'react-super-responsive-table'; // e
 import Transaction from './transaction';
 import { selectTransactions } from '../selectors';
 
-const Transactions = ({ transactions }) => <Table>
+const Transactions = ({ transactions, total }) => <Table>
   <Thead>
     <Tr>
       <Th>Name</Th>
       <Th>Email</Th>
-      <Th>Amount</Th>
+      <Th>Amount (total - £{total})</Th>
       <Th>Date</Th>
     </Tr>
   </Thead>
@@ -25,11 +25,13 @@ const Transactions = ({ transactions }) => <Table>
 </Table>;
 
 const mapStateToProps = state => ({
-  transactions: selectTransactions(state)
+  transactions: selectTransactions(state),
+  total: selectTransactions(state).reduce((acc, current) => acc + parseFloat(current.amount, 10), 0)
 });
 
 Transactions.propTypes = {
-  transactions: PropTypes.array.isRequired
+  transactions: PropTypes.array.isRequired,
+  total: PropTypes.number.isRequired
 };
 
 export default connect(mapStateToProps)(Transactions);

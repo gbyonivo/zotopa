@@ -2,7 +2,7 @@ import { effects } from 'redux-saga';
 import { sagas } from './transactionSagas';
 
 export default function* rootSaga() {
-  yield [
+  yield effects.all([
     effects.call(sagas)
-  ];
+  ]);
 }

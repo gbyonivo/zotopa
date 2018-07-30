@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "node --harmony_proxies node_modules/.bin/jest",
-    "start": "react-scripts start"
+    "start": "react-scripts start --production",
+    "start-dev": "react-scripts start --development"
   },
   "repository": {
     "type": "git",

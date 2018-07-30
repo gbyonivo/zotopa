@@ -11,7 +11,7 @@ import SendMoneyForm from './containers/sendMoneyForm';
 import PersonalDetails from './containers/personalDetails';
 import FriendsListMenu from './containers/friendsListMenu';
 
-import './index.scss';
+import './index.css';
 
 WebFont.load({
   google: {
@@ -42,4 +42,4 @@ ReactDOM.render(<Provider store={store}>
       <Route path="/" component={PersonalDetails} exact />
     </div>
   </BrowserRouter>
-</Provider>, document.getElementById('index')); //eslint-disable-line
+</Provider>, document.getElementById('root')); //eslint-disable-line

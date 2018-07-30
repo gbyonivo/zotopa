@@ -3,6 +3,8 @@ dist
 **/log-version.js
 coverage
 **/webpack.config*
+**/webpack*
 test/mock/**
 eslint_config
 jestFileTransformer.js
+server.js

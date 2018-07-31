@@ -39,7 +39,6 @@ body{
 }
 
 @media screen and (max-width: 40em) {
-  .responsiveTable {}
   .responsiveTable table, .responsiveTable thead, .responsiveTable tbody, .responsiveTable th, .responsiveTable td, .responsiveTable tr {
     display: block;
   }
@@ -57,7 +56,6 @@ body{
   }
 
   .responsiveTable td.pivoted {
-        /* Behave like a "row" */
     border: none !important;
     border-bottom: 1px solid #000;
     position: relative;
@@ -66,10 +64,8 @@ body{
   }
 
   .responsiveTable td .tdBefore {
-        /* Now like a table header */
     position: absolute;
     display: block;
-        /* Top/left values mimic padding */
     left: 1rem;
     width: 45%;
     padding-right: 10px;

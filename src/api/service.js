@@ -1,4 +1,4 @@
-import FirebaseClient from 'firebase-client';
+import FirebaseClient from '../lib/firebase-client';
 
 const firebase = new FirebaseClient({
   url: 'https://zotopa-d8113.firebaseio.com/'

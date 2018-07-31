@@ -31,6 +31,11 @@ const List = styled.ul`
   }
 `;
 
+const TransactionListItem = styled.li`
+  height: 70vh;
+  overflow: auto;
+`;
+
 const AccountDetails = ({ personalDetails }) => <List>
   <li>
     <Label>Account Name</Label>
@@ -44,14 +49,14 @@ const AccountDetails = ({ personalDetails }) => <List>
     <Label>Availble Funds</Label>
     <Span>£{personalDetails.availableFunds}</Span>
   </li>
-  <li>
+  <TransactionListItem>
     <Label className="transaction">Transactions</Label>
     {
       Object.keys(personalDetails.transactions).length
         ? <Transactions />
         : <Span>No Transactions</Span>
     }
-  </li>
+  </TransactionListItem>
 </List>;
 
 AccountDetails.propTypes = {

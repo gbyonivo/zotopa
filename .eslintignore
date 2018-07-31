@@ -8,3 +8,5 @@ test/mock/**
 eslint_config
 jestFileTransformer.js
 server.js
+src/registerServiceWorker.js
+src/lib/**

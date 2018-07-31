@@ -5,6 +5,7 @@ import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import WebFont from 'webfontloader';
+import registerServiceWorker from './registerServiceWorker';
 import reducer from './reducers';
 import rootSaga from './sagas';
 import SendMoneyForm from './containers/sendMoneyForm';
@@ -43,3 +44,4 @@ ReactDOM.render(<Provider store={store}>
     </div>
   </BrowserRouter>
 </Provider>, document.getElementById('root')); //eslint-disable-line
+registerServiceWorker();

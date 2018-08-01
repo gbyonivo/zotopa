@@ -33,9 +33,11 @@ open 'localhost:3000/' on your browser
 
 run 'npm test' to run the tests (min coverage 80%)
 
-## Problems running on codesandbox!!!!
+## PROBLEMS running on CODESANDBOX!!!!
 
-I have tried running this application on codesandbox but it will only work after I have made a change to the files. Any change I make will force the project to start (include adding space anywhere or even just deleting semi colons). Before that it shows an error related to the firebase client module I am using.
+IN THE SRC/API/SERVICE there is an option to use firebase uncomment the above commented code and comment the one below to use firebase.
+
+I have tried running this application on codesandbox but it will only work after I have made a change to the files. Any change I make will force the project to start (include adding space anywhere or even just deleting semi colons). Before that it shows an error related to the firebase client module I am using. and even shows errors with redux-sagas/effect.
 
 ## Authors
 

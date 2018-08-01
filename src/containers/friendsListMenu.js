@@ -5,6 +5,7 @@ import { compose } from 'redux';
 import { selectErrorFetchingFriends, selectFriends, selectIsFetchingFriends } from '../selectors';
 import * as actions from '../actions';
 import FriendsList from '../components/friendsList';
+import Loading from '../components/loading';
 
 class FriendsListMenu extends Component {
   componentDidMount() {
@@ -19,7 +20,7 @@ class FriendsListMenu extends Component {
         errorFetching // eslint-disable-line
           ? errorFetching // eslint-disable-line
           : isFetching
-            ? 'loading'
+            ? <Loading/>
             : <FriendsList friends={friends}/>
       }
     </div>);
